@@ -10,6 +10,16 @@
 :root{--bg:#0b1320;--sidebar:#0d1726;--top:#101b2d;--panel:#142033;--panel2:#17263a;--border:#26374b;--text:#eaf0f5;--muted:#91a0b3;--gold:#d8b979;--gold2:#edd6a2;--blue:#86b6d1;--violet:#af9ddd;--green:#94c8b1;--red:#edab9c;--radius:16px;--shadow:0 16px 36px rgba(0,0,0,.13)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.6 'DM Sans',system-ui,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}a{color:var(--gold2)}h1,h2,h3,p{margin:0}h1,h2,h3{font-family:'Manrope',sans-serif;letter-spacing:-.035em}h1{line-height:1.17}h2{font-size:19px;font-weight:750}h3{font-size:14px;margin-bottom:9px}p{color:var(--muted)}.shell{display:grid;grid-template-columns:248px minmax(0,1fr);min-height:100vh}.sidebar{background:var(--sidebar);border-right:1px solid var(--border);position:sticky;top:0;height:100vh;display:flex;flex-direction:column;padding:30px 14px 25px;z-index:2}.brand{display:flex;align-items:center;gap:12px;padding:2px 9px 46px}.brand-mark{width:48px;height:48px;border:1px solid #bca067;border-radius:11px;color:var(--gold);font-size:21px;display:grid;place-items:center;background:linear-gradient(145deg,#2d312c,#141c28);box-shadow:inset 0 0 22px #cab47f11}.brand strong{font:800 12px 'Manrope';letter-spacing:.13em;display:block}.brand span{font-size:8px;letter-spacing:.23em;color:var(--gold)}.side-subtitle,.micro-label,.eyebrow{font-size:10px;letter-spacing:.19em;color:var(--gold);font-weight:700}.side-subtitle{padding:0 15px 13px;color:#788da5}.nav{display:flex;align-items:center;text-align:left;gap:12px;padding:12px 14px;width:100%;color:#b2bdcd;background:none;border:0;border-radius:10px;margin-bottom:3px;font-weight:600;font-size:12px;min-height:43px}.nav:hover,.nav.active{color:#f4f2ed;background:#26354a}.nav.active{box-shadow:inset 3px 0 var(--gold)}.nav-icon{font-size:20px;width:21px;line-height:1;text-align:center;color:var(--gold)}.nav-arrow{margin-left:auto}.counter{border-radius:8px;background:#314056;font-size:10px;padding:1px 7px;margin-left:auto;color:var(--gold2)}.sidebar-bottom{border-top:1px solid var(--border);margin-top:auto;padding:22px 11px 0;display:flex;flex-direction:column;gap:6px}.sidebar-bottom b{font-size:12px}.sidebar-bottom span{font-size:11px;color:var(--muted)}.sidebar-bottom a{font-size:11px;text-decoration:none}.main-area{min-width:0;display:flex;flex-direction:column}.topbar{height:73px;padding:0 38px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;background:#101b2ddd;gap:14px}.breadcrumb{font-size:10px;color:#7d91a7;letter-spacing:.12em;font-weight:700}.breadcrumb strong{color:var(--text)}.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.offline-state{font-size:11px;color:var(--muted);white-space:nowrap}.pulse{display:inline-block;width:7px;height:7px;background:#8bbda6;border-radius:50%;margin-right:6px}.tiny-button{border:1px solid #39475d;background:#1a2738;color:#d6dfe6;border-radius:8px;padding:8px 10px;font-size:11px;font-weight:600;text-decoration:none;cursor:pointer}.tiny-button:hover{border-color:var(--gold);color:var(--gold)}.content{padding:36px 38px 48px;max-width:1580px;width:100%;margin:0 auto;flex:1}.page{display:none;animation:enter .25s ease}.page.active{display:block}@keyframes enter{from{opacity:.4;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}.headline{display:grid;grid-template-columns:minmax(0,1fr) 220px;align-items:center;gap:25px;padding:12px 0 32px}.headline h1{font-size:clamp(32px,3.4vw,51px);margin:12px 0 16px;max-width:740px}.headline h1 em{font-style:normal;color:var(--gold)}.headline p{max-width:645px;font-size:13px;line-height:1.9}.crest{display:grid;place-items:center}.crest-ring{width:172px;height:172px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid #998454;border-radius:50%;box-shadow:0 0 0 10px #151f30,0 0 0 11px #2e3945,0 0 60px #ceae5f0d;background:radial-gradient(circle,#333329,#1b2838 65%)}.crest-ring span{font-size:54px;color:var(--gold);font-weight:400}.crest-ring small{color:#a8a392;font-size:9px;letter-spacing:.22em}.stats-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-bottom:24px}.stat{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:17px 18px 15px;position:relative;overflow:hidden}.stat:after{content:'';position:absolute;right:-20px;top:-27px;width:75px;height:75px;border:1px solid #d1b57d22;border-radius:50%}.stat .stat-label{font-size:10px;color:var(--muted);letter-spacing:.06em;font-weight:700}.stat .number{font:800 31px/1.3 'Manrope';margin:8px 0 0}.stat .sub{font-size:10px;color:var(--gold);margin-top:3px}.two-col{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;margin-bottom:18px}.panel,.wide-panel{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:22px;min-width:0}.panel-head{display:flex;justify-content:space-between;align-items:center;gap:13px;margin-bottom:18px}.panel-head .eyebrow{margin-bottom:5px}.text-button{background:none;border:0;color:var(--gold);font-size:11px;font-weight:700}.issue-preview{padding:11px 0;border-top:1px solid #28384d;display:flex;align-items:flex-start;gap:13px}.issue-preview .diamond{font-size:17px;color:var(--gold)}.issue-preview b{display:block;font-size:12px}.issue-preview small{display:block;color:var(--muted);font-size:11px;margin-top:2px}.canon-map{display:flex;align-items:center;gap:8px;flex-wrap:nowrap;padding:21px 0}.node{min-width:0;flex:1}.node span,.node small{font-size:10px;color:var(--muted);display:block}.node b{display:block;font-size:12px;margin:7px 0;color:var(--gold2)}.map-line{flex:0 0 18px;height:1px;background:var(--gold)}.rule-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}.rule-strip>div{border-top:1px solid #6e6555;padding-top:13px;display:flex;flex-direction:column;gap:5px}.rule-strip b{font-size:12px;color:var(--gold)}.rule-strip span{font-size:11px;color:var(--muted)}.wide-panel{margin-top:18px}.page-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:29px}.page-heading h1{font-size:clamp(28px,3vw,38px);margin:10px 0}.page-heading p{font-size:12px;max-width:690px}.segmented,.tabs{display:flex;background:#142033;border:1px solid var(--border);border-radius:10px;padding:4px;gap:3px;flex-wrap:wrap}.seg,.tab{border:0;border-radius:7px;padding:8px 12px;background:transparent;color:var(--muted);font-size:11px;font-weight:700}.seg.active,.tab.active{background:#36475b;color:var(--gold2)}.seg:hover,.tab:hover{color:#fff}.timeline-list{position:relative;margin:10px 0 27px 26px;border-left:1px solid #536075}.timeline-item{padding:0 0 30px 31px;position:relative}.timeline-dot{position:absolute;left:-7px;top:7px;width:13px;height:13px;background:#193048;border:3px solid var(--gold);border-radius:50%}.timeline-item.open .timeline-dot{border-color:var(--muted)}.timeline-card{padding:19px 21px;background:var(--panel);border:1px solid var(--border);border-radius:13px}.timeline-card h3{font-size:16px;margin:7px 0}.timeline-card p{font-size:12px;line-height:1.8}.timeline-meta{font-size:10px;color:var(--gold);font-weight:700;letter-spacing:.05em;display:flex;gap:14px;align-items:center;flex-wrap:wrap}.meta-footer{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.pill{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;font-size:9px;font-weight:750;border-radius:30px;white-space:nowrap;background:#27384c;color:#d6e2eb;border:1px solid #3a4b62}.pill.au{background:#3a2e47;color:#dbbef5;border-color:#554463}.pill.official{background:#253e45;color:#abe1d5;border-color:#3c5f61}.pill.spec{background:#4a3d2b;color:#f1d1a6;border-color:#625037}.pill.locked{color:#b2d5bc;background:#213b36;border-color:#355b4e}.pill.open{color:#e5c9a3;background:#473927;border-color:#65543b}.pill.review{color:#f0b5a8;background:#4a3335;border-color:#65454a}.power-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));margin-top:19px;gap:8px}.power-stage{padding:13px 9px;border:1px solid #33465d;border-radius:9px;background:#17283d;min-height:145px}.power-stage.unknown{background:#192434;border-style:dashed}.power-stage b{display:block;color:var(--gold);font-size:12px}.power-stage span{display:block;font-size:10px;font-weight:700;margin:7px 0}.power-stage p{font-size:10px;line-height:1.5}.muted{color:var(--muted)!important}.panel.compact{padding:21px}.filter-row{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:20px;flex-wrap:wrap}.search-wrap{min-width:255px;display:flex;align-items:center;gap:9px;background:#18283b;border:1px solid var(--border);border-radius:9px;padding:0 12px;color:#a6b4c4}.search-wrap input{padding:9px 3px;border:0;outline:0;background:none;color:var(--text);width:100%;font-size:11px}.search-wrap input::placeholder{color:#75899b}.database-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.db-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:21px;min-height:207px;display:flex;flex-direction:column;justify-content:space-between}.db-card h3{font-size:15px;margin:10px 0 7px;color:#f0f3f5}.db-card p{font-size:11px;line-height:1.8}.db-meta{font-size:10px;color:var(--muted);margin-top:8px}.db-card .meta-footer{margin-top:17px}.db-top{display:flex;justify-content:space-between;gap:10px}.db-code{font-size:10px;color:var(--gold);font-weight:700;letter-spacing:.1em}.empty{background:var(--panel);border:1px dashed var(--border);padding:40px 18px;text-align:center;color:var(--muted);border-radius:13px}.empty b{color:var(--text);display:block;margin:7px}.stack{display:flex;flex-direction:column;gap:12px}.entry{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:20px}.entry h3{font-size:15px;margin:7px 0}.entry p{font-size:12px;line-height:1.7}.entry .entry-cols{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:15px}.entry h4{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin:0 0 6px}.entry-top{display:flex;justify-content:space-between;gap:15px;align-items:flex-start}.entry-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}.small-action{border:1px solid #485568;border-radius:7px;padding:6px 9px;color:#e0e8ed;background:#1f2e42;font-size:10px;font-weight:700}.small-action:hover{border-color:var(--gold)}.small-action.danger{color:#efb0a4}.small-action.accept{color:#aad1bd}.primary{background:linear-gradient(145deg,#dfc488,#b99b64);border:0;color:#1d2331;font-weight:800;font-size:12px;border-radius:9px;padding:11px 17px;box-shadow:0 2px 0 #947747}.primary:hover{filter:brightness(1.07)}.primary.full{width:100%}.form-panel{margin-bottom:21px}.hidden{display:none!important}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form-grid>label,.field-label{display:block;color:#cfd8e3;font-size:11px;font-weight:700}.form-grid input:not([type=checkbox]),.form-grid textarea,.form-grid select,.field-label textarea{display:block;width:100%;margin-top:7px;padding:11px 12px;background:#0f1b2c;border:1px solid #35465c;border-radius:8px;color:var(--text);font-size:12px;outline:none;resize:vertical}.form-grid input:focus,.form-grid textarea:focus,.form-grid select:focus,.field-label textarea:focus{border-color:var(--gold)}.span-2{grid-column:span 2}.check-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:9px}.check-row label{display:flex;align-items:center;gap:5px;border:1px solid #3c5067;border-radius:7px;padding:6px 9px;color:#b7c5d3;font-size:10px;font-weight:500}.check-row input{accent-color:#d1b87e}.form-footer{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:19px}.form-footer small{font-size:10px;color:var(--muted)}.audit-layout{display:grid;grid-template-columns:1.25fr .85fr;gap:17px}.audit-filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}.audit-filter{font-size:10px;border:1px solid #3c4a60;color:var(--muted);background:#19283b;border-radius:7px;padding:6px 9px}.audit-filter.active{background:#3f4c5e;color:var(--gold2)}.finding{padding:15px 0;border-top:1px solid #29394d}.finding-top{display:flex;justify-content:space-between;align-items:center;gap:8px}.finding h3{font-size:13px;margin:7px 0}.finding p{font-size:11px}.severity{font-size:10px;border-radius:6px;padding:3px 7px;color:#dae4ea;background:#2b4054}.severity.tinggi{background:#4c3033;color:#efb3a6}.severity.sedang{background:#504331;color:#edd2a2}.severity.info{background:#263d4e;color:#9fc3d9}.finding .source{font-size:10px;color:#748a9f;margin-top:7px}.field-label textarea{margin-bottom:12px}.separator{height:1px;background:var(--border);margin:23px 0}.small-stack .entry{padding:12px}.small-stack .entry p{font-size:11px}.proposal-tabs{width:max-content;max-width:100%;margin-bottom:18px}footer{padding:18px 38px;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#71849a;font-size:9px;letter-spacing:.06em}footer a{color:#c8ae7c;text-decoration:none}#toast{position:fixed;right:25px;bottom:24px;border:1px solid #4f604e;background:#19302b;color:#daede2;padding:12px 17px;border-radius:10px;font-size:12px;box-shadow:var(--shadow);max-width:340px;z-index:10;opacity:0;transform:translateY(10px);pointer-events:none;transition:.18s}#toast.visible{opacity:1;transform:translateY(0)}@media(max-width:1250px){.database-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.power-grid{grid-template-columns:repeat(4,1fr)}.stats-grid{grid-template-columns:repeat(2,1fr)}.rule-strip{grid-template-columns:repeat(2,1fr)}}@media(max-width:900px){.shell{grid-template-columns:1fr}.sidebar{position:static;height:auto;padding:14px 16px 7px}.sidebar .brand{padding:0 0 15px}.sidebar .side-subtitle,.sidebar-bottom{display:none}.sidebar nav{display:flex;overflow:auto;gap:5px;scrollbar-width:thin}.nav{flex:0 0 auto;width:auto;padding:10px 12px;white-space:nowrap;margin:0}.topbar{padding:12px 20px;height:auto;min-height:63px}.content{padding:25px 20px}.two-col,.audit-layout{grid-template-columns:1fr}.headline{grid-template-columns:1fr 145px}.crest-ring{width:122px;height:122px}.crest-ring span{font-size:37px}.crest-ring small{font-size:7px}footer{padding:18px 20px}}@media(max-width:620px){.topbar{align-items:flex-start;flex-direction:column}.headline{grid-template-columns:1fr}.crest{display:none}.headline h1{font-size:33px}.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat{padding:13px}.stat .number{font-size:26px}.page-heading{align-items:stretch;flex-direction:column}.power-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.database-grid,.form-grid,.entry .entry-cols{grid-template-columns:1fr}.span-2{grid-column:auto}.filter-row{align-items:stretch}.search-wrap{min-width:0;width:100%}.canon-map{align-items:flex-start;flex-direction:column}.map-line{width:1px;height:12px;flex:0 0 auto;margin-left:8px}.rule-strip{grid-template-columns:1fr}.form-footer{align-items:stretch;flex-direction:column}.form-footer button{width:100%}.topbar .toolbar{justify-content:flex-start}.segmented{width:max-content;max-width:100%}}
 
 .source-strip{font-size:11px;color:var(--muted);padding:12px 16px;border:1px solid var(--border);border-radius:9px;background:#172438;margin-bottom:18px}.source-strip a{margin-left:8px;text-decoration:none}.source-strip span{margin-left:8px}
+
+/* Supabase Auth */
+.auth-backdrop{position:fixed;inset:0;z-index:100;background:rgba(3,9,17,.79);display:flex;align-items:center;justify-content:center;padding:18px}
+.auth-card{background:#142033;border:1px solid #41546b;box-shadow:0 30px 90px rgba(0,0,0,.55);border-radius:17px;width:min(540px,100%);max-height:95vh;overflow-y:auto;padding:25px;color:var(--text)}
+.auth-head{display:flex;align-items:start;justify-content:space-between;gap:18px}.auth-head h2{font-size:21px;margin:8px 0 12px}.auth-note,.auth-hint{font-size:11px;line-height:1.8;color:var(--muted)}
+.auth-form{display:grid;gap:14px;margin-top:19px}.auth-form label{display:block;font-size:11px;font-weight:700;color:#dce6ee}.auth-form input{display:block;margin-top:7px;width:100%;background:#0d1727;color:var(--text);border:1px solid #41546b;border-radius:8px;padding:12px;font-size:13px}
+.auth-form input:focus{outline:1px solid var(--gold)}.auth-actions{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0}.auth-feedback{color:var(--gold2);min-height:17px;font-size:11px;line-height:1.6}.auth-identity{font-size:12px;line-height:1.8}.auth-identity strong{color:var(--gold2)}
+.migration-panel{border:1px solid #806d49;background:#2a2b32;border-radius:12px;padding:16px;margin:16px 0}.migration-panel>strong{font-size:12px;color:var(--gold2)}.migration-panel>p{font-size:11px;color:#d9d0bc;line-height:1.7}
+#syncStatus{max-width:220px;white-space:normal;font-size:10px;line-height:1.4}#syncStatus.sync-bad{color:#edab9c}#syncStatus.sync-ok{color:#9dd9b7}
+@media(max-width:620px){.auth-card{padding:19px}.auth-actions{flex-direction:column}.auth-actions button{width:100%}}
 </style>
 </head>
 <body>
@@ -28,7 +38,7 @@
    <div class="sidebar-bottom"><div class="micro-label">DASAR CERITA</div><b>Master Story Bible v0.6</b><span>Sinkronisasi otomatis: nonaktif</span><a id="sourceMasterSide" target="_blank" rel="noopener noreferrer">Buka dokumen master ↗</a></div>
   </aside>
   <div class="main-area">
-   <header class="topbar"><div class="breadcrumb">PROJECT / ONE PIECE AU / <strong id="breadcrumb">RINGKASAN</strong></div><div class="toolbar"><span class="offline-state"><span class="pulse"></span> Penyimpanan lokal</span><button class="tiny-button" id="exportBtn">↓ Ekspor JSON</button><label class="tiny-button upload-button">↑ Impor JSON<input type="file" id="importInput" accept="application/json,.json" hidden></label></div></header>
+   <header class="topbar"><div class="breadcrumb">PROJECT / ONE PIECE AU / <strong id="breadcrumb">RINGKASAN</strong></div><div class="toolbar"><span class="offline-state" id="syncStatus" aria-live="polite"><span class="pulse"></span> Penyimpanan lokal</span><button class="tiny-button" id="authBtn" type="button">Masuk · Cloud</button><button class="tiny-button" id="exportBtn">↓ Ekspor JSON</button><label class="tiny-button upload-button">↑ Impor JSON<input type="file" id="importInput" accept="application/json,.json" hidden></label></div></header>
    <main class="content">
     <section id="page-dashboard" class="page active">
      <div class="headline"><div><div class="eyebrow">STORY INTELLIGENCE / V0.6</div><h1>Menjaga satu dunia,<br><em>satu kontinuitas.</em></h1><p>Pusat pengetahuan Amatsukagami: memisahkan manga resmi, interpretasi, dan keputusan AU tanpa mengubah Story Bible secara otomatis.</p></div><div class="crest"><div class="crest-ring"><span>天鏡</span><small>WORLD BIBLE</small></div></div></div>
@@ -48,10 +58,37 @@
     <section id="page-audit" class="page"><div class="page-heading"><div><div class="eyebrow">CONSISTENCY ENGINE</div><h1>Pemeriksa kontradiksi</h1><p>Pemeriksaan berbasis aturan eksplisit dari Master v0.6 dan keputusan penulis. Hasilnya merupakan peringatan editorial, bukan penentu kebenaran otomatis.</p></div><button id="runAudit" class="primary">↻ Jalankan audit</button></div><div class="audit-layout"><div class="panel"><div class="panel-head"><h2>Temuan audit</h2><span id="auditTotal" class="soft-label"></span></div><div class="audit-filters"><button class="audit-filter active" data-severity="Semua">Semua</button><button class="audit-filter" data-severity="tinggi">Kritis</button><button class="audit-filter" data-severity="sedang">Perhatian</button><button class="audit-filter" data-severity="info">Terbuka</button></div><div id="auditFindings"></div></div><div class="panel"><div class="panel-head"><h2>Uji klaim calon naskah</h2></div><p class="muted">Tempel satu fakta atau pernyataan baru. Pemeriksa akan mencocokkannya dengan batas-batas yang sudah dikunci.</p><form id="claimForm"><label class="field-label">Klaim / adegan untuk diperiksa<textarea name="claim" rows="7" maxlength="5000" placeholder="Contoh: Hagoromo memindahkan klan ke dekat Kozuki saat muda..."></textarea></label><button type="submit" class="primary full">Periksa dan simpan klaim</button></form><div class="separator"></div><h3>Klaim tersimpan</h3><div id="claimsList" class="stack small-stack"></div></div></div></section>
     <section id="page-proposals" class="page"><div class="page-heading"><div><div class="eyebrow">CHANGE GOVERNANCE</div><h1>Usulan perubahan</h1><p>Setiap ide, bahkan yang berasal dari manga resmi, hanya boleh menjadi usulan. Persetujuan lokal tidak mengedit dokumen Google Drive.</p></div><button id="toggleProposalForm" class="primary">+ Buat usulan</button></div><form id="proposalForm" class="panel form-panel hidden"><div class="panel-head"><h2>Ajukan pembaruan kanon</h2><button class="text-button" type="button" id="closeProposalForm">Tutup ×</button></div><div class="form-grid"><label>Judul usulan *<input name="title" maxlength="180" required placeholder="Contoh: Konsolidasi pedang utama Akira"></label><label>Area *<select name="area"><option>Sejarah klan</option><option>Timeline Akira</option><option>Kekuatan Akira</option><option>Relik</option><option>Buah Iblis</option><option>Kozuki</option><option>Peristiwa manga</option></select></label><label class="span-2">Usulan teks / keputusan *<textarea name="proposedText" rows="4" maxlength="4000" required></textarea></label><label class="span-2">Alasan dan dampak kontinuitas *<textarea name="impact" rows="3" maxlength="2500" required></textarea></label><label class="span-2">Rujukan / nomor bab / sumber<input name="source" maxlength="600" placeholder="Master v0.6 §09 atau manga bab ..."></label></div><div class="form-footer"><small>Semua usulan baru otomatis berstatus Menunggu persetujuan.</small><button type="submit" class="primary">Ajukan — jangan terapkan</button></div></form><div class="tabs proposal-tabs"><button class="tab active" data-pfilter="Semua">Semua</button><button class="tab" data-pfilter="Menunggu persetujuan">Menunggu</button><button class="tab" data-pfilter="Disetujui lokal">Disetujui lokal</button><button class="tab" data-pfilter="Ditolak">Ditolak</button></div><div id="proposalList" class="stack"></div></section>
    </main>
-   <footer><span>AMATSUKAGAMI · ONE PIECE AU · EDITORIAL WORKSPACE</span><span>Data browser lokal · Cadangkan melalui ekspor JSON · <a id="sourceMasterFooter" target="_blank" rel="noopener noreferrer">Master Bible v0.6 ↗</a></span></footer>
+   <footer><span>AMATSUKAGAMI · ONE PIECE AU · EDITORIAL WORKSPACE</span><span>Data browser dicadangkan lokal · Sinkron cloud setelah login · <a id="sourceMasterFooter" target="_blank" rel="noopener noreferrer">Master Bible v0.6 ↗</a></span></footer>
   </div>
  </div>
+ <div class="auth-backdrop hidden" id="authDialog">
+  <section class="auth-card" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+   <div class="auth-head"><div><div class="eyebrow">DATABASE PERMANEN</div><h2 id="authTitle">Supabase · Sinkronisasi</h2></div><button type="button" class="tiny-button" id="authClose" aria-label="Tutup dialog">✕</button></div>
+   <p class="auth-note">Data kanon dasar tetap terkunci. Yang disinkronkan hanya catatan bab, klaim, usulan, dan hasil audit.</p>
+   <div id="authGuest">
+    <form id="authForm" class="auth-form">
+     <label>Email<input id="authEmail" type="email" autocomplete="email" required placeholder="alamat@email.com"></label>
+     <label>Kata sandi<input id="authPassword" type="password" autocomplete="current-password" required placeholder="Kata sandi akun Supabase"></label>
+     <div class="auth-actions"><button class="primary" type="submit" id="signInBtn">Masuk</button><button class="tiny-button" type="button" id="signUpBtn">Daftar akun baru</button></div>
+    </form>
+    <p class="auth-hint">Jika baru mendaftar, periksa email konfirmasi sebelum login. Jangan gunakan kata sandi database di sini.</p>
+   </div>
+   <div id="authConnected" class="hidden">
+    <p class="auth-identity">Masuk sebagai <strong id="authUserEmail"></strong></p>
+    <p id="authStateDetails" class="auth-hint"></p>
+    <div id="migrationPanel" class="migration-panel hidden">
+     <strong>Pilih sumber data sebelum sinkronisasi pertama</strong>
+     <p id="migrationMessage">Data lokal dan data cloud tidak sama. Tidak ada data yang akan ditimpa otomatis.</p>
+     <div class="auth-actions"><button id="cloudLoadBtn" class="tiny-button" type="button">Gunakan data cloud</button><button id="cloudMergeBtn" class="primary" type="button">Gabungkan & simpan ke cloud</button></div>
+     <p class="auth-hint">Data lokal yang lama tetap tersimpan sebagai cadangan. Proses gabung mempertahankan entri berbeda dan keputusan terakhir yang tercatat.</p>
+    </div>
+    <div class="auth-actions"><button id="syncNowBtn" class="tiny-button" type="button">Sinkronkan sekarang</button><button id="logoutBtn" class="tiny-button" type="button">Keluar dari akun</button></div>
+   </div>
+   <p id="authMessage" class="auth-feedback" aria-live="polite"></p>
+  </section>
+ </div>
  <div id="toast" role="status" aria-live="polite"></div>
+ <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
  <script>const MASTER_URL = 'https://docs.google.com/document/d/1X-4Op-Vh5DVr7D5UWDSQyRnH5LwMUmaeu6WNNHhAVos/edit';
 const BASELINE = Object.freeze({
   metadata: {
@@ -231,10 +268,13 @@ const BASELINE = Object.freeze({
   const $=selector=>document.querySelector(selector);
   const $$=selector=>Array.from(document.querySelectorAll(selector));
   const initial=()=>({schema:1,chapters:[],proposals:[],claims:[],auditAt:null});
+  let currentUser=null, client=null, cloudReady=false, cloudRevision=null, cloudHasConflict=false, cloudFailure='', cloudWorking=false, cloudMigration=null, stateNonce=0, pushTimer=null, cloudGeneration=0, retrySync=false;
   let state=loadState(),page='dashboard',dbTable='characters',dbQuery='',era='Semua',chapterFilter='Semua',proposalFilter='Semua',auditSeverity='Semua';
-  function loadState(){
-    try { const raw=localStorage.getItem(STORAGE_KEY); if(raw) return validateState(JSON.parse(raw)); }
-    catch(err){ console.warn('Penyimpanan belum bisa dibaca:',err); }
+  function loadState(){return loadFromKey(STORAGE_KEY);}
+  function userKey(uid){return STORAGE_KEY+'_user_'+uid;}
+  function loadFromKey(key){
+    try {const raw=localStorage.getItem(key);if(raw)return validateState(JSON.parse(raw));}
+    catch(err){console.warn('Penyimpanan belum bisa dibaca:',err);}
     return initial();
   }
   function validateState(input){
@@ -248,7 +288,8 @@ const BASELINE = Object.freeze({
     clean.auditAt=string(input.auditAt||'')||null;
     return clean;
   }
-  function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(err){toast('Gagal menyimpan: ruang browser penuh atau dibatasi. Ekspor JSON untuk cadangan.');console.warn(err);}}
+  function cacheState(){try{localStorage.setItem(currentUser?userKey(currentUser.id):STORAGE_KEY,JSON.stringify(state));}catch(err){toast('Gagal menyimpan data lokal; segera ekspor JSON.');console.warn(err);}}
+  function save(){cacheState();stateNonce++;if(currentUser)retrySync=true;if(currentUser&&cloudReady&&!cloudHasConflict){clearTimeout(pushTimer);pushTimer=setTimeout(()=>flushCloud(),550);}renderSyncStatus();}
   function id(prefix){return prefix+'-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,6);}
   function now(){return new Date().toISOString();}
   function safe(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
@@ -256,7 +297,7 @@ const BASELINE = Object.freeze({
   function shortDate(d){const z=new Date(d);return Number.isNaN(z.valueOf())?'Tidak tercatat':z.toLocaleDateString('id-ID',{day:'2-digit',month:'short',year:'numeric'});}
   function toast(msg){const t=byId('toast');t.textContent=msg;t.classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.classList.remove('visible'),3800);}
   function kindPill(kind){return `<span class="pill ${kind==='AU'?'au':kind==='KANON_RESMI'?'official':'spec'}">${kind==='AU'?'ATURAN AU':kind==='KANON_RESMI'?'KANON RESMI':'SPEKULASI'}</span>`;}
-  function statePill(status){const klass=status==='DIKUNCI'||status==='Disetujui lokal'||status==='Terverifikasi manual'||status==='RUJUKAN RESMI'?'locked':status==='TERBUKA'||status==='Menunggu persetujuan'||status==='Belum diverifikasi'?'open':'review';return `<span class="pill ${klass}">${safe(status==='Disetujui lokal'?'Disetujui lokal · belum sinkron':status)}</span>`;}
+  function statePill(status){const klass=status==='DIKUNCI'||status==='Disetujui lokal'||status==='Terverifikasi manual'||status==='RUJUKAN RESMI'?'locked':status==='TERBUKA'||status==='Menunggu persetujuan'||status==='Belum diverifikasi'?'open':'review';return `<span class="pill ${klass}">${safe(status==='Disetujui lokal'?'Disetujui aplikasi · Master tetap':status)}</span>`;}
   function go(p){page=p;$$('.page').forEach(e=>e.classList.toggle('active',e.id==='page-'+p));$$('.nav').forEach(e=>e.classList.toggle('active',e.dataset.page===p));byId('breadcrumb').textContent=({dashboard:'RINGKASAN',timeline:'TIMELINE',database:'DATABASE',chapters:'PANTAUAN MANGA',audit:'AUDIT',proposals:'PERSETUJUAN'})[p];window.scrollTo({top:0,behavior:'smooth'});render();}
   function stats(){const issues=CanonRules.auditState(state,BASELINE);const critical=issues.filter(x=>x.severity==='tinggi').length, open=issues.filter(x=>x.severity==='sedang').length;
     byId('statsGrid').innerHTML=[
@@ -292,6 +333,190 @@ const BASELINE = Object.freeze({
     }).join(''):`<div class="empty"><b>Tidak ada usulan pada kategori ini.</b>Usulan dapat berasal dari bab manga, temuan audit, atau diskusi penulis.</div>`;
   }
   function render(){stats();if(page==='timeline')renderTimeline();if(page==='database')renderDB();if(page==='chapters')renderChapters();if(page==='audit')renderAudit();if(page==='proposals')renderProposals();}
+
+  // Supabase stores authenticated working notes; the baseline remains immutable.
+  const CLOUD_URL='https://zzvcfsueioaalwtgqwjy.supabase.co';
+  const CLOUD_PUBLIC_KEY='sb_publishable_r3hhIiSn1ADcR0w3sklNcw_4ceSdzvO';
+  const byCount=x=>x.chapters.length+' bab, '+x.proposals.length+' usulan, '+x.claims.length+' klaim';
+  const hasEntries=x=>Boolean(x.chapters.length||x.proposals.length||x.claims.length||x.auditAt);
+  function mergeStates(remote,local){
+    const r=validateState(remote),l=validateState(local),result=initial();
+    for(const field of ['chapters','claims','proposals']){
+      const records=new Map(r[field].map(x=>[x.id,x]));
+      l[field].forEach(item=>{
+        const old=records.get(item.id);
+        if(!old)records.set(item.id,item);
+        else if(field==='proposals'&&item.decisionAt&&(!old.decisionAt||item.decisionAt>old.decisionAt))records.set(item.id,item);
+      });
+      result[field]=[...records.values()].slice(0,3000);
+    }
+    result.auditAt=[r.auditAt,l.auditAt].filter(Boolean).sort().at(-1)||null;
+    return result;
+  }
+  function authMessage(message){byId('authMessage').textContent=message;}
+  function showAuth(){updateAuthDisplay();byId('authDialog').classList.remove('hidden');byId('authEmail')?.focus();}
+  function hideAuth(){byId('authDialog').classList.add('hidden');authMessage('');}
+  function renderSyncStatus(){
+    const s=byId('syncStatus');if(!s)return;
+    let label='Penyimpanan lokal',type='';
+    if(currentUser){
+      if(cloudHasConflict){label='Konflik cloud · tindakan diperlukan';type='sync-bad';}
+      else if(cloudMigration){label='Pilih data lokal / cloud';type='sync-bad';}
+      else if(cloudFailure){label='Gagal sinkron · tersimpan lokal';type='sync-bad';}
+      else if(cloudWorking){label='Sedang menyinkronkan…';}
+      else if(cloudReady){label='Cloud terhubung · '+(retrySync?'perubahan lokal tertunda':'tersinkron');type=retrySync?'sync-bad':'sync-ok';}
+      else{label='Memuat data cloud…';}
+    }else if(!client){label='Mode lokal · cloud belum siap';}
+    s.classList.remove('sync-bad','sync-ok');if(type)s.classList.add(type);
+    s.innerHTML='<span class="pulse"></span> '+safe(label);
+    byId('authBtn').textContent=currentUser?'Akun / Cloud':'Masuk · Cloud';
+  }
+  function updateAuthDisplay(){
+    byId('authGuest').classList.toggle('hidden',Boolean(currentUser));
+    byId('authConnected').classList.toggle('hidden',!currentUser);
+    byId('authUserEmail').textContent=currentUser?.email||'';
+    byId('migrationPanel').classList.toggle('hidden',!cloudMigration);
+    byId('syncNowBtn').disabled=Boolean(cloudMigration||cloudWorking);
+    if(currentUser){
+      const detail=cloudHasConflict?'Ada perubahan dari perangkat lain. Pilih sumber data, lalu gabungkan jika diperlukan.':cloudFailure?'Sinkronisasi gagal: '+cloudFailure:cloudMigration?'Pilih tindakan migrasi di bawah.':'Cadangan tersimpan di browser dan database Supabase.';
+      byId('authStateDetails').textContent=detail;
+      if(cloudMigration){
+        const remote=cloudMigration.remote||initial();
+        byId('migrationMessage').textContent='Di perangkat ini: '+byCount(state)+'. Di cloud: '+byCount(remote)+'. Pilih apakah akan memakai data cloud atau menggabungkan keduanya. Tidak ada perubahan kanon dasar.';
+      }
+    }
+    renderSyncStatus();
+  }
+  async function loadCloudRow(){
+    const {data,error}=await client.from('observatory_state').select('state,updated_at').eq('user_id',currentUser.id).maybeSingle();
+    if(error)throw error;return data||null;
+  }
+  async function connectCloud(user){
+    if(!user||currentUser?.id===user.id)return;
+    const generation=++cloudGeneration;
+    currentUser=user;cloudReady=false;cloudHasConflict=false;cloudFailure='';cloudMigration=null;retrySync=false;cloudRevision=null;updateAuthDisplay();
+    const guest=localStorage.getItem(STORAGE_KEY+'_migrated_'+user.id)==='yes'?initial():loadFromKey(STORAGE_KEY);
+    const owner=loadFromKey(userKey(user.id));const local=mergeStates(owner,guest);
+    state=local;render();
+    try{
+      const row=await loadCloudRow();if(generation!==cloudGeneration)return;
+      cloudRevision=row?.updated_at||null;const remote=row?validateState(row.state):initial();
+      if(!hasEntries(local)||JSON.stringify(local)===JSON.stringify(remote)){
+        state=remote;cloudReady=true;cacheState();render();
+      }else{cloudMigration={remote,local};cloudReady=false;updateAuthDisplay();showAuth();}
+    }catch(err){
+      if(generation!==cloudGeneration)return;
+      cloudFailure=err.message||'Tidak dapat membaca database';
+      cloudReady=false;renderSyncStatus();updateAuthDisplay();
+      toast('Koneksi cloud gagal. Catatan lokal tetap aman; periksa RLS dan jaringan.');
+    }
+  }
+  function markMigrationDone(){
+    try{localStorage.setItem(STORAGE_KEY+'_migrated_'+currentUser.id,'yes');}catch{}
+    cloudMigration=null;cloudHasConflict=false;cloudFailure='';cloudReady=true;
+    cacheState();render();updateAuthDisplay();
+  }
+  async function resolveMigration(mode){
+    if(!currentUser||!cloudMigration)return;
+    const current=cloudMigration;
+    if(mode==='cloud'){
+      if(hasEntries(state)&&!confirm('Muat data cloud untuk akun ini? Data lokal lama tetap tersimpan sebagai cadangan browser, tetapi tidak ditampilkan sampai Anda mengimpornya lagi.'))return;
+      state=current.remote;markMigrationDone();hideAuth();toast('Data cloud dimuat. Master Bible tetap terkunci.');return;
+    }
+    try{
+      const latest=await loadCloudRow();cloudRevision=latest?.updated_at||null;
+      state=mergeStates(latest?.state||initial(),state);
+      markMigrationDone();retrySync=true;await flushCloud();
+      if(!cloudHasConflict&&!cloudFailure){hideAuth();toast('Catatan berhasil digabungkan dan disimpan ke cloud.');}
+    }catch(err){cloudFailure=err.message||'Gagal memuat cloud';renderSyncStatus();updateAuthDisplay();toast('Penggabungan belum berhasil; data lokal tetap tersedia.');}
+  }
+  async function triggerConflict(){
+    cloudReady=false;cloudHasConflict=true;cloudFailure='';retrySync=true;clearTimeout(pushTimer);
+    try{const latest=await loadCloudRow();cloudRevision=latest?.updated_at||null;cloudMigration={remote:latest?validateState(latest.state):initial()};}
+    catch(err){cloudFailure=err.message||'Tidak dapat memeriksa versi cloud';cloudMigration={remote:initial()};}
+    updateAuthDisplay();showAuth();toast('Data cloud berubah di perangkat lain. Pilih cara menggabungkan data; perubahan lokal aman.');
+  }
+  async function flushCloud(){
+    if(!client||!currentUser||!cloudReady||cloudHasConflict)return;
+    if(cloudWorking){retrySync=true;return;}
+    clearTimeout(pushTimer);cloudWorking=true;cloudFailure='';retrySync=false;renderSyncStatus();
+    const generation=cloudGeneration,nonce=stateNonce,snapshot=validateState(state);
+    try{
+      let output;
+      if(cloudRevision){
+        const {data,error}=await client.from('observatory_state').update({state:snapshot,updated_at:now()}).eq('user_id',currentUser.id).eq('updated_at',cloudRevision).select('updated_at').maybeSingle();
+        if(error)throw error;
+        if(!data){cloudWorking=false;await triggerConflict();return;}output=data;
+      }else{
+        const {data,error}=await client.from('observatory_state').insert({user_id:currentUser.id,state:snapshot}).select('updated_at').single();
+        if(error){if(error.code==='23505'){cloudWorking=false;await triggerConflict();return;}throw error;}output=data;
+      }
+      if(generation!==cloudGeneration)return;
+      cloudRevision=output.updated_at;cloudFailure='';if(nonce!==stateNonce)retrySync=true;
+    }catch(err){
+      if(generation!==cloudGeneration)return;
+      cloudFailure=err.message||'Kesalahan jaringan';retrySync=true;
+      toast('Cloud gagal menyimpan. Data tetap ada di browser; tekan Sinkronkan sekarang untuk mencoba lagi.');
+    }finally{
+      if(generation===cloudGeneration){cloudWorking=false;renderSyncStatus();updateAuthDisplay();if(retrySync&&!cloudFailure&&cloudReady&&!cloudHasConflict){clearTimeout(pushTimer);pushTimer=setTimeout(()=>flushCloud(),300);}}
+    }
+  }
+  function disconnectCloud(){
+    ++cloudGeneration;clearTimeout(pushTimer);
+    currentUser=null;cloudReady=false;cloudHasConflict=false;cloudFailure='';cloudMigration=null;cloudRevision=null;cloudWorking=false;retrySync=false;
+    state=loadFromKey(STORAGE_KEY);render();updateAuthDisplay();
+  }
+  async function startCloud(){
+    if(!window.supabase?.createClient){authMessage('Library Supabase tidak dapat dimuat. Periksa koneksi internet atau pemblokir script.');renderSyncStatus();return;}
+    client=window.supabase.createClient(CLOUD_URL,CLOUD_PUBLIC_KEY);renderSyncStatus();
+    client.auth.onAuthStateChange((event,session)=>{
+      if(event==='SIGNED_OUT'){disconnectCloud();return;}
+      if(session?.user&&session.user.id!==currentUser?.id){setTimeout(()=>connectCloud(session.user),0);}
+    });
+    const {data,error}=await client.auth.getUser();
+    if(data?.user&&data.user.id!==currentUser?.id)await connectCloud(data.user);
+    else if(error)console.warn('Sesi Supabase belum tersedia:',error.message);
+    renderSyncStatus();
+  }
+  byId('authBtn').addEventListener('click',()=>{authMessage('');showAuth();});
+  byId('authClose').addEventListener('click',hideAuth);
+  byId('authDialog').addEventListener('click',event=>{if(event.target===byId('authDialog'))hideAuth();});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape')hideAuth();});
+  byId('authForm').addEventListener('submit',async e=>{
+    e.preventDefault();if(!client){authMessage('Layanan cloud belum dapat dimuat.');return;}
+    const email=byId('authEmail').value.trim(),password=byId('authPassword').value;
+    authMessage('Memeriksa akun…');
+    const {error}=await client.auth.signInWithPassword({email,password});
+    if(error){authMessage('Login gagal: '+error.message);return;}
+    byId('authPassword').value='';authMessage('Login berhasil; membaca data cloud…');
+  });
+  byId('signUpBtn').addEventListener('click',async()=>{
+    if(!client){authMessage('Layanan cloud belum dapat dimuat.');return;}
+    const email=byId('authEmail').value.trim(),password=byId('authPassword').value;
+    if(!byId('authEmail').validity.valid||!email){authMessage('Masukkan email yang valid.');return;}
+    if(password.length<12){authMessage('Gunakan kata sandi minimal 12 karakter untuk akun baru.');return;}
+    authMessage('Mendaftarkan akun…');
+    const {data,error}=await client.auth.signUp({email,password,options:{emailRedirectTo:location.origin+location.pathname}});
+    byId('authPassword').value='';
+    if(error){authMessage('Pendaftaran gagal: '+error.message);return;}
+    authMessage(data?.session?'Akun dibuat dan login berhasil.':'Pendaftaran terkirim. Periksa email konfirmasi, lalu kembali ke aplikasi.');
+  });
+  byId('cloudLoadBtn').addEventListener('click',()=>resolveMigration('cloud'));
+  byId('cloudMergeBtn').addEventListener('click',()=>resolveMigration('merge'));
+  byId('syncNowBtn').addEventListener('click',async()=>{
+    if(!currentUser)return;
+    if(cloudHasConflict||cloudMigration){showAuth();return;}
+    if(!cloudReady){
+      cloudFailure='';try{const row=await loadCloudRow();cloudRevision=row?.updated_at||null;cloudMigration={remote:row?validateState(row.state):initial()};updateAuthDisplay();showAuth();}catch(e){cloudFailure=e.message;updateAuthDisplay();}return;
+    }
+    await flushCloud();if(!cloudFailure&&!cloudHasConflict)toast('Data kerja tersinkron ke Supabase.');
+  });
+  byId('logoutBtn').addEventListener('click',async()=>{
+    if(!client)return;
+    try{const {error}=await client.auth.signOut();if(error)throw error;disconnectCloud();hideAuth();toast('Keluar dari cloud. Data akun lain tidak ditampilkan.');}
+    catch(err){authMessage('Gagal keluar: '+err.message);}
+  });
+
   // Navigation
   $$('.nav').forEach(n=>n.addEventListener('click',()=>go(n.dataset.page)));
   $$('[data-goto]').forEach(n=>n.addEventListener('click',()=>go(n.dataset.goto)));
@@ -317,7 +542,7 @@ const BASELINE = Object.freeze({
   byId('chaptersList').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const idV=b.dataset.verify||b.dataset.unverify||b.dataset.deleteChapter||b.dataset.proposeChapter;const found=state.chapters.find(x=>x.id===idV);if(!found)return;
     if(b.dataset.verify){if(!confirm('Sudah memeriksa nomor bab, tanggal, panel manga, dan sumber resmi? Ini hanya memverifikasi catatan, bukan mengubah kanon AU.'))return;found.verification='Terverifikasi manual';}
     else if(b.dataset.unverify){found.verification='Belum diverifikasi';}
-    else if(b.dataset.deleteChapter){if(!confirm('Hapus catatan rilis ini dari penyimpanan lokal?'))return;state.chapters=state.chapters.filter(x=>x.id!==idV);}
+    else if(b.dataset.deleteChapter){if(!confirm('Hapus catatan rilis ini dari data kerja (termasuk cloud jika tersinkron)?'))return;state.chapters=state.chapters.filter(x=>x.id!==idV);}
     else if(b.dataset.proposeChapter){proposeFromChapter(idV);return;}
     save();render();
   });
@@ -329,7 +554,7 @@ const BASELINE = Object.freeze({
   });
   byId('proposalForm').addEventListener('submit',e=>{e.preventDefault();const f=e.currentTarget;const d=new FormData(f);state.proposals.push({id:id('P'),title:String(d.get('title')).trim(),area:String(d.get('area')),proposedText:String(d.get('proposedText')).trim(),impact:String(d.get('impact')).trim(),source:String(d.get('source')).trim(),status:'Menunggu persetujuan',createdAt:now(),decisionAt:''});save();f.reset();f.classList.add('hidden');render();toast('Usulan dicatat. Menunggu persetujuan penulis.');});
   byId('proposalList').addEventListener('click',async e=>{const b=e.target.closest('button');if(!b)return;const idV=b.dataset.approve||b.dataset.reject||b.dataset.copy;const p=state.proposals.find(x=>x.id===idV);if(!p)return;
-    if(b.dataset.approve){const flag=CanonRules.auditClaim([p.proposedText,p.impact].join(' '));const warning=flag.length?`\n\nPERINGATAN: ${flag.map(x=>x.title).join('; ')}.`:'';if(!confirm(`Setujui secara MANUAL usulan “${p.title}”?${warning}\n\nPersetujuan ini hanya dicatat dalam aplikasi lokal, BUKAN diterapkan ke Google Docs.`))return;p.status='Disetujui lokal';p.decisionAt=now();toast('Disetujui di aplikasi. Master Bible Google Docs belum berubah.');}
+    if(b.dataset.approve){const flag=CanonRules.auditClaim([p.proposedText,p.impact].join(' '));const warning=flag.length?`\n\nPERINGATAN: ${flag.map(x=>x.title).join('; ')}.`:'';if(!confirm(`Setujui secara MANUAL usulan “${p.title}”?${warning}\n\nPersetujuan dicatat di aplikasi dan akan tersinkron jika login; Master Bible Google Docs tetap tidak berubah.`))return;p.status='Disetujui lokal';p.decisionAt=now();toast('Persetujuan dicatat. Master Bible Google Docs tidak berubah.');}
     else if(b.dataset.reject){if(!confirm('Tolak usulan ini?'))return;p.status='Ditolak';p.decisionAt=now();}
     else if(b.dataset.copy){const copy=`${p.title}\nArea: ${p.area}\nStatus: ${p.status}\nUsulan: ${p.proposedText}\nDampak: ${p.impact}\nSumber: ${p.source}`;try{await navigator.clipboard.writeText(copy);toast('Usulan disalin.');}catch{window.prompt('Salin redaksi berikut:',copy);}return;}
     save();render();
@@ -339,10 +564,11 @@ const BASELINE = Object.freeze({
     const payload={...state,exportedAt:now(),baselineVersion:BASELINE.metadata.version,masterUrl:BASELINE.metadata.masterUrl};
     const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const anchor=document.createElement('a');anchor.href=url;anchor.download='amatsukagami-canon-backup-'+new Date().toISOString().slice(0,10)+'.json';document.body.append(anchor);anchor.click();anchor.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);toast('Backup JSON diekspor.');
   });
-  byId('importInput').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>5*1024*1024)throw new Error('File terlalu besar (maksimum 5 MB).');const obj=JSON.parse(await file.text());const next=validateState(obj);if(!confirm(`Impor ${next.chapters.length} catatan manga, ${next.proposals.length} usulan, dan ${next.claims.length} klaim? Data lokal saat ini akan diganti; baseline kanon tetap terkunci.`))return;state=next;save();render();toast('Backup berhasil diimpor, baseline tidak berubah.');}catch(err){toast('Impor gagal: '+err.message);}finally{e.target.value='';}});
+  byId('importInput').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>5*1024*1024)throw new Error('File terlalu besar (maksimum 5 MB).');const obj=JSON.parse(await file.text());const next=validateState(obj);if(!confirm(`Impor ${next.chapters.length} catatan manga, ${next.proposals.length} usulan, dan ${next.claims.length} klaim? Data kerja saat ini akan diganti (dan tersinkron jika login); baseline kanon tetap terkunci.`))return;state=next;save();render();toast('Backup berhasil diimpor, baseline tidak berubah.');}catch(err){toast('Impor gagal: '+err.message);}finally{e.target.value='';}});
   byId('sourceMasterSide').href=BASELINE.metadata.masterUrl;
   byId('sourceMasterFooter').href=BASELINE.metadata.masterUrl;
   render();
+  startCloud().catch(err=>{console.warn("Inisialisasi cloud gagal:",err);toast("Cloud belum tersedia. Mode lokal tetap berjalan.");});
 })();
 </script>
 </body>
