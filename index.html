@@ -21,6 +21,104 @@
 #syncStatus{max-width:220px;white-space:normal;font-size:10px;line-height:1.4}#syncStatus.sync-bad{color:#edab9c}#syncStatus.sync-ok{color:#9dd9b7}
 @media(max-width:620px){.auth-card{padding:19px}.auth-actions{flex-direction:column}.auth-actions button{width:100%}}
 </style>
+<style id="responsive-ui-v11">
+
+/* Responsive UI v1.1: viewport width and touch-device aware. */
+.mobile-header,.mobile-menu-button,.nav-scrim{display:none}
+@media (max-width:960px), (hover:none) and (pointer:coarse) and (max-width:1250px){
+  html{scroll-padding-top:122px}
+  body{font-size:16px;line-height:1.55;-webkit-text-size-adjust:100%}
+  .shell{display:block;min-height:100dvh}
+  .main-area{width:100%;min-width:0}
+  .sidebar{position:fixed;left:0;top:0;bottom:0;height:100dvh;width:min(320px,88vw);max-width:88vw;z-index:211;overflow-y:auto;transform:translateX(-110%);transition:transform .22s ease;background:var(--sidebar);padding:22px 14px 26px;box-shadow:18px 0 38px rgba(0,0,0,.35)}
+  .shell.menu-open .sidebar{transform:translateX(0)}
+  .sidebar .brand{padding:4px 8px 25px}
+  .sidebar .side-subtitle{display:block;padding:0 15px 10px}
+  .sidebar nav{display:flex;flex-direction:column;overflow:visible;gap:5px;scrollbar-width:auto}
+  .nav{width:100%;flex:0 0 auto;text-align:left;white-space:normal;margin:0;min-height:50px;padding:12px 13px;font-size:14px}
+  .nav-icon{font-size:22px;width:26px}
+  .sidebar-bottom{display:flex;flex-direction:column;padding:20px 10px 0;margin-top:22px;gap:6px}
+  .nav-scrim{display:none;position:fixed;inset:0;z-index:210;background:rgba(0,4,10,.68);border:0}
+  .shell.menu-open .nav-scrim{display:block}
+  .mobile-header{display:flex;align-items:center;gap:11px;min-width:0}
+  .mobile-menu-button{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;border:1px solid #43576f;border-radius:11px;background:#1b2c42;color:var(--gold2);font-size:25px;line-height:1}
+  .mobile-brand{display:flex;flex-direction:column;gap:1px;min-width:0}
+  .mobile-brand strong{font-family:'Manrope',sans-serif;font-size:13px;letter-spacing:.1em;line-height:1.25}
+  .mobile-brand small{font-size:10px;letter-spacing:.12em;color:var(--gold)}
+  .topbar{position:sticky;top:0;z-index:110;display:flex;align-items:stretch;flex-direction:column;min-height:0;height:auto;padding:10px 16px 12px;gap:9px;background:#101b2d;border-bottom:1px solid #2b3b4d}
+  .breadcrumb{display:none}
+  .topbar .toolbar{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;align-items:stretch;width:100%}
+  .toolbar .offline-state{grid-column:1/-1;font-size:12px;white-space:normal;min-height:19px}
+  .toolbar #authBtn{grid-column:1/-1;background:#24384b;color:#f2ead9;border-color:#52657c;font-size:13px}
+  .toolbar .tiny-button{min-height:42px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:12px;padding:9px 10px}
+  .toolbar .upload-button{cursor:pointer}
+  .content{max-width:none;padding:20px 14px 40px}
+  .headline{display:block;padding:5px 0 24px}
+  .headline h1{font-size:clamp(29px,7.6vw,40px);line-height:1.2;margin:10px 0 12px;letter-spacing:-.04em}
+  .headline p{font-size:14px;line-height:1.7}
+  .crest{display:none}
+  .eyebrow,.micro-label{font-size:10px}
+  .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:16px}
+  .stat{padding:15px 13px;min-height:120px}
+  .stat .stat-label{font-size:11px;line-height:1.4}
+  .stat .number{font-size:30px}
+  .stat .sub{font-size:11px;line-height:1.4}
+  .two-col,.audit-layout,.database-grid,.form-grid{grid-template-columns:minmax(0,1fr);gap:13px}
+  .two-col{margin-bottom:14px}
+  .panel,.wide-panel,.db-card,.entry{padding:17px 16px;border-radius:13px}
+  .panel-head{align-items:flex-start;gap:12px;flex-wrap:wrap}
+  .panel-head h2{font-size:18px}
+  .issue-preview b,.node b{font-size:13px}
+  .issue-preview small,.node span,.node small,.rule-strip span,.db-card p,.db-meta,.entry p,.finding p,.timeline-card p{font-size:12px;line-height:1.6}
+  .canon-map{flex-direction:column;align-items:flex-start;gap:9px;padding:14px 0}
+  .canon-map .node{width:100%}
+  .map-line{width:2px;height:15px;flex:0 0 auto;margin-left:7px}
+  .rule-strip{grid-template-columns:minmax(0,1fr);gap:13px}
+  .rule-strip b{font-size:13px}
+  .wide-panel{margin-top:14px}
+  .page-heading{align-items:stretch;flex-direction:column;gap:16px;margin-bottom:20px}
+  .page-heading h1{font-size:30px;margin:7px 0}
+  .page-heading p{font-size:13px}
+  .segmented,.tabs{max-width:100%;width:100%;gap:5px}
+  .seg,.tab{min-height:40px;flex:1 1 auto;font-size:12px;white-space:normal}
+  .filter-row{align-items:stretch;gap:12px}
+  .search-wrap{min-width:0;width:100%}
+  .search-wrap input{font-size:16px;min-height:44px}
+  .power-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .power-stage{min-height:125px}
+  .power-stage b{font-size:14px}
+  .power-stage span,.power-stage p{font-size:12px}
+  .entry .entry-cols{grid-template-columns:minmax(0,1fr)}
+  .entry-top{flex-wrap:wrap}
+  .entry h3,.db-card h3{font-size:16px}
+  .entry-actions{gap:8px}
+  .small-action,.audit-filter{min-height:42px;font-size:12px;padding:9px 12px}
+  .primary{min-height:44px;font-size:14px}
+  .form-grid>label,.field-label{font-size:13px}
+  .form-grid input:not([type=checkbox]),.form-grid textarea,.form-grid select,.field-label textarea{font-size:16px;padding:12px;min-height:45px}
+  .form-footer{align-items:stretch;flex-direction:column}
+  .form-footer .primary{width:100%}
+  .check-row label{font-size:12px;min-height:42px}
+  .check-row input{width:17px;height:17px}
+  .timeline-list{margin-left:11px}
+  .timeline-item{padding-left:21px}
+  .timeline-card{padding:16px}
+  .timeline-card h3{font-size:16px}
+  .auth-backdrop{padding:12px;align-items:center}
+  .auth-card{width:100%;max-width:540px;padding:18px;max-height:calc(100dvh - 24px);border-radius:14px}
+  .auth-head h2{font-size:20px}
+  .auth-note,.auth-hint{font-size:13px;line-height:1.6}
+  .auth-card input,.auth-card select,.auth-card textarea{font-size:16px;min-height:44px}
+  .auth-card button{min-height:43px;font-size:13px}
+  #toast{left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));max-width:none;font-size:13px}
+  footer{padding:17px 16px;font-size:11px}
+  .db-card,.entry,.panel,.wide-panel,.timeline-card,.finding,.node{overflow-wrap:anywhere}
+  .pill{max-width:100%;white-space:normal}
+  .tiny-button{touch-action:manipulation}
+}
+@media (max-width:370px){.stats-grid{grid-template-columns:minmax(0,1fr)}.stat{min-height:100px}.power-grid{grid-template-columns:minmax(0,1fr)}.toolbar .tiny-button{font-size:11px}}
+@media (prefers-reduced-motion:reduce){.sidebar{transition:none!important}}
+</style>
 </head>
 <body>
  <div class="shell">
@@ -37,8 +135,9 @@
    </nav>
    <div class="sidebar-bottom"><div class="micro-label">DASAR CERITA</div><b>Master Story Bible v0.6</b><span>Sinkronisasi otomatis: nonaktif</span><a id="sourceMasterSide" target="_blank" rel="noopener noreferrer">Buka dokumen master ↗</a></div>
   </aside>
+  <div class="nav-scrim" id="mobileNavScrim" aria-hidden="true"></div>
   <div class="main-area">
-   <header class="topbar"><div class="breadcrumb">PROJECT / ONE PIECE AU / <strong id="breadcrumb">RINGKASAN</strong></div><div class="toolbar"><span class="offline-state" id="syncStatus" aria-live="polite"><span class="pulse"></span> Penyimpanan lokal</span><button class="tiny-button" id="authBtn" type="button">Masuk · Cloud</button><button class="tiny-button" id="exportBtn">↓ Ekspor JSON</button><label class="tiny-button upload-button">↑ Impor JSON<input type="file" id="importInput" accept="application/json,.json" hidden></label></div></header>
+   <header class="topbar"><div class="mobile-header"><button type="button" class="mobile-menu-button" id="mobileMenuBtn" aria-label="Buka menu navigasi" aria-controls="navigation" aria-expanded="false">☰</button><div class="mobile-brand"><strong>AMATSUKAGAMI</strong><small>CANON OBSERVATORY</small></div></div><div class="breadcrumb">PROJECT / ONE PIECE AU / <strong id="breadcrumb">RINGKASAN</strong></div><div class="toolbar"><span class="offline-state" id="syncStatus" aria-live="polite"><span class="pulse"></span> Penyimpanan lokal</span><button class="tiny-button" id="authBtn" type="button">Masuk · Cloud</button><button class="tiny-button" id="exportBtn">↓ Ekspor JSON</button><label class="tiny-button upload-button">↑ Impor JSON<input type="file" id="importInput" accept="application/json,.json" hidden></label></div></header>
    <main class="content">
     <section id="page-dashboard" class="page active">
      <div class="headline"><div><div class="eyebrow">STORY INTELLIGENCE / V0.6</div><h1>Menjaga satu dunia,<br><em>satu kontinuitas.</em></h1><p>Pusat pengetahuan Amatsukagami: memisahkan manga resmi, interpretasi, dan keputusan AU tanpa mengubah Story Bible secara otomatis.</p></div><div class="crest"><div class="crest-ring"><span>天鏡</span><small>WORLD BIBLE</small></div></div></div>
@@ -569,6 +668,23 @@ const BASELINE = Object.freeze({
   byId('sourceMasterFooter').href=BASELINE.metadata.masterUrl;
   render();
   startCloud().catch(err=>{console.warn("Inisialisasi cloud gagal:",err);toast("Cloud belum tersedia. Mode lokal tetap berjalan.");});
+})();
+</script>
+<script>
+/* Mobile navigation is presentation-only; it does not modify canon or cloud state. */
+(function(){
+  const shell=document.querySelector('.shell');
+  const menu=document.getElementById('mobileMenuBtn');
+  const scrim=document.getElementById('mobileNavScrim');
+  const nav=document.getElementById('navigation');
+  if(!shell||!menu||!scrim||!nav)return;
+  const close=()=>{shell.classList.remove('menu-open');menu.setAttribute('aria-expanded','false');document.body.style.overflow='';};
+  const open=()=>{shell.classList.add('menu-open');menu.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';};
+  menu.addEventListener('click',()=>shell.classList.contains('menu-open')?close():open());
+  scrim.addEventListener('click',close);
+  nav.addEventListener('click',e=>{if(e.target.closest('[data-page]'))close();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&shell.classList.contains('menu-open')){close();menu.focus();}});
+  window.addEventListener('resize',()=>{if(window.innerWidth>1250)close();});
 })();
 </script>
 </body>
