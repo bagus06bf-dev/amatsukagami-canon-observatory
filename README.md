@@ -59,3 +59,21 @@ Google Sites tidak dapat diterbitkan secara langsung melalui koneksi yang tersed
 - ONE PIECE.com, daftar volume: https://one-piece.com/comics/index.html?category=elbaph
 
 Volume 114 mencakup bab 1156–1166 (God Valley), menurut daftar volume di situs resmi; **ini bukan pengisian otomatis ringkasan bab**.
+
+## Supabase cloud sync (v1.1)
+
+Aplikasi tetap diterbitkan sebagai GitHub Pages statis. Login email/password dan penyimpanan catatan kerja diaktifkan lewat Supabase dengan Project URL `https://zzvcfsueioaalwtgqwjy.supabase.co` dan **publishable key** (bukan secret). Jangan pernah memasukkan database password, `sb_secret_...` atau `service_role` ke kode publik.
+
+**Tabel wajib:** `public.observatory_state` dengan kolom `user_id uuid primary key`, `state jsonb not null`, `updated_at timestamptz not null`. Row Level Security harus aktif. Policy SELECT/INSERT/UPDATE untuk role `authenticated` mensyaratkan `user_id = (select auth.uid())`. Pengguna anonim tidak mendapat akses.
+
+**Konfigurasi Auth:** Supabase → Authentication → URL Configuration: Site URL dan Redirect URL diatur ke `https://bagus06bf-dev.github.io/amatsukagami-canon-observatory/`. Provider Email aktif. Konfirmasi email direkomendasikan.
+
+**Cara menggunakan:**
+1. Buka website lalu klik **Masuk · Cloud**. Daftar dengan email dan kata sandi jika belum mempunyai akun; konfirmasi email lalu login.
+2. Jika ada catatan lokal lama, pilih **Gabungkan & simpan ke cloud** agar catatan lama dan catatan cloud dipertahankan. Pilih **Gunakan data cloud** hanya jika memang ingin memakai isi cloud dan mengabaikan catatan lokal yang belum diimpor.
+3. Perhatikan indikator **Cloud terhubung · tersinkron**. Jika sinkron gagal, catatan tetap berada di browser; gunakan **Sinkronkan sekarang** setelah jaringan pulih.
+4. Lakukan **Ekspor JSON** secara berkala sebagai cadangan.
+
+Penyimpanan menggunakan satu dokumen JSON per pengguna dan pengamanan konflik berbasis versi kolom `updated_at`. Jika perangkat lain telah memperbarui data, penggabungan harus dipilih secara manual. Semua *baseline* kanon tetap *read-only* dan **Master Story Bible di Google Drive tidak pernah diperbarui otomatis**.
+
+**Batasan:** Versi ini belum melakukan realtime push, sinkronisasi Google Docs, atau pemeriksaan manga otomatis. Pengujian lokal dilakukan dengan simulasi Supabase; keberhasilan login dan penulisan ke database produksi harus diverifikasi dari website aktif.
